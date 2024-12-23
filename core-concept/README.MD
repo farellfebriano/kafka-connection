@@ -13,9 +13,8 @@ in this project we will foccus on understanding the core configuration of kafka 
   </thead>
   <tbody>
     <tr>
-      <td><code class="highlighter-rouge">I just love **bold text**.</code></td>
+      <td><code class="highlighter-rouge"> KAFKA_CFG_NODE_ID=0</code></td>
       <td><code class="highlighter-rouge">I just love &lt;strong&gt;bold text&lt;/strong&gt;.</code></td>
-    
     </tr>
    
   </tbody>
