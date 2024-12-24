@@ -20,7 +20,8 @@ also host other components (like ZooKeeper in older setups or additional service
 Specifies the roles this Kafka node will perform. Controller --> Manages metadata, oversees partition assignments, and performs administrative tasks in KRaft mode. broker --> Handles client requests (from producers and consumers) and stores partition data.
 <br/>
 
-`KAFKA_CFG_LISTENERS=PLAINTEXT://:9092,CONTROLLER://:9093,EXTERNAL://0.0.0.0:9094` <br/>
-Specifies the roles this Kafka node will perform. Controller --> Manages metadata, oversees partition assignments, and performs administrative tasks in KRaft mode. broker --> Handles client requests (from producers and consumers) and stores partition data.
+`- KAFKA_CFG_LISTENERS=INTERNAL://:9092,CONTROLLER://:9093` <br/>
+kafka specifies that internal communication withing the container will use locahost:9092 AND the communication between brokers 
+in one cluster will use "kafka:9093" (which will be specified in `KAFKA_CFG_CONTROLLER_QUORUM_VOTERS`
 <br/>
 
