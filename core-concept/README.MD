@@ -15,7 +15,12 @@ A node may run a Kafka broker process (the main Kafka service), but technically,
 also host other components (like ZooKeeper in older setups or additional services).
 ```
 <br/>
-<br/>
+
 `KAFKA_CFG_PROCESS_ROLES=controller,broker` <br/>
 Specifies the roles this Kafka node will perform. Controller --> Manages metadata, oversees partition assignments, and performs administrative tasks in KRaft mode. broker --> Handles client requests (from producers and consumers) and stores partition data.
+<br/>
+
+`KAFKA_CFG_LISTENERS=PLAINTEXT://:9092,CONTROLLER://:9093,EXTERNAL://0.0.0.0:9094` <br/>
+Specifies the roles this Kafka node will perform. Controller --> Manages metadata, oversees partition assignments, and performs administrative tasks in KRaft mode. broker --> Handles client requests (from producers and consumers) and stores partition data.
+<br/>
 
