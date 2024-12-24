@@ -4,18 +4,5 @@ in this project we will foccus on understanding the core configuration of kafka 
 
 ## CORE ENVIRONMENT
 
-<table class="table table-bordered">
-  <thead class="thead-light">
-    <tr>
-      <th>ENVIRONMENT</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code class="highlighter-rouge"> KAFKA_CFG_NODE_ID=0</code></td>
-      <td><code class="highlighter-rouge">I just love &lt;strong&gt;bold text&lt;/strong&gt;.</code></td>
-    </tr>
-   
-  </tbody>
-</table>
+`KAFKA_CFG_NODE_ID=0` <br/>
+In kraft mode, each node mush have a unique id. In this example this node will have id of 0.
